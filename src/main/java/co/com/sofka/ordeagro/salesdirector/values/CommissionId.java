@@ -1,7 +1,6 @@
 package co.com.sofka.ordeagro.salesdirector.values;
 
 import co.com.sofka.domain.generic.Identity;
-import co.com.sofka.ordeagro.shared.VendorId;
 
 public class CommissionId extends Identity {
 
