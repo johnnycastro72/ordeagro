@@ -14,6 +14,10 @@ public class DetailProduct extends Entity<InvoiceId> {
     private Quantity quantity;
     private Price price;
 
+    public DetailProduct(InvoiceId invoiceId) {
+        super(invoiceId);
+    }
+
     public DetailProduct(InvoiceId invoiceId, ProductId productId, Quantity quantity, Price price) {
         super(invoiceId);
         this.productId = productId;

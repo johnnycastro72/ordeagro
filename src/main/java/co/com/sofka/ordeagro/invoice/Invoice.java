@@ -43,8 +43,8 @@ public class Invoice extends AggregateEvent<InvoiceId> {
         appendChange(new CustomerPhoneUpdated(customerId, phone)).apply();
     }
 
-    public void CreateCustomer(CustomerId customerId, Name name, Phone phone, Email email) {
-        appendChange(new CustomerCreated(customerId, name, phone, email));
+    public void CreateCustomer(CustomerId customerId, Name name, Address address, Phone phone, Email email) {
+        appendChange(new CustomerCreated(customerId, name, address, phone, email));
     }
 
     public void AddProduct(InvoiceId invoiceId, ProductId productId, Quantity quantity, Price price) {

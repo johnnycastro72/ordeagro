@@ -1,21 +1,20 @@
 package co.com.sofka.ordeagro.invoice.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.ordeagro.invoice.values.CustomerId;
-import co.com.sofka.ordeagro.invoice.values.Email;
-import co.com.sofka.ordeagro.invoice.values.Name;
-import co.com.sofka.ordeagro.invoice.values.Phone;
+import co.com.sofka.ordeagro.invoice.values.*;
 
 public class CustomerCreated extends DomainEvent {
     private final CustomerId customerId;
     private final Name name;
+    private final Address address;
     private final Phone phone;
     private final Email email;
 
-    public CustomerCreated(CustomerId customerId, Name name, Phone phone, Email email) {
+    public CustomerCreated(CustomerId customerId, Name name, Address address, Phone phone, Email email) {
         super("ordeagro.sofka.customercreated");
         this.customerId = customerId;
         this.name = name;
+        this.address = address;
         this.phone = phone;
         this.email = email;
     }
@@ -26,6 +25,10 @@ public class CustomerCreated extends DomainEvent {
 
     public Name name() {
         return name;
+    }
+
+    public Address address() {
+        return address;
     }
 
     public Phone phone() {

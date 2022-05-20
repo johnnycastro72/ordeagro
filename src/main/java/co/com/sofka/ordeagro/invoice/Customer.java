@@ -12,6 +12,10 @@ public class Customer extends Entity<CustomerId> {
     private Phone phone;
     private Email email;
 
+    public Customer(CustomerId customerId) {
+        super(customerId);
+    }
+
     public Customer(CustomerId customerId, Name name, Address address, Phone phone, Email email) {
         super(customerId);
         this.name = name;
