@@ -1,4 +1,4 @@
-package co.com.sofka.ordeagro.invoice.values;
+package co.com.sofka.ordeagro.shared;
 
 import co.com.sofka.domain.generic.ValueObject;
 

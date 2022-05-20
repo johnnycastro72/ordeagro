@@ -2,7 +2,7 @@ package co.com.sofka.ordeagro.invoice;
 
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.ordeagro.invoice.values.InvoiceId;
-import co.com.sofka.ordeagro.invoice.values.Price;
+import co.com.sofka.ordeagro.shared.Price;
 import co.com.sofka.ordeagro.invoice.values.ProductId;
 import co.com.sofka.ordeagro.invoice.values.Quantity;
 
