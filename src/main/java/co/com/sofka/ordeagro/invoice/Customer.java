@@ -2,6 +2,10 @@ package co.com.sofka.ordeagro.invoice;
 
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.ordeagro.invoice.values.*;
+import co.com.sofka.ordeagro.shared.Address;
+import co.com.sofka.ordeagro.shared.Email;
+import co.com.sofka.ordeagro.shared.Name;
+import co.com.sofka.ordeagro.shared.Phone;
 
 import java.util.Objects;
 

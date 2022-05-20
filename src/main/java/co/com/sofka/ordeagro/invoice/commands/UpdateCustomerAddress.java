@@ -1,7 +1,7 @@
 package co.com.sofka.ordeagro.invoice.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofka.ordeagro.invoice.values.Address;
+import co.com.sofka.ordeagro.shared.Address;
 import co.com.sofka.ordeagro.invoice.values.CustomerId;
 
 public class UpdateCustomerAddress extends Command {

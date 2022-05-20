@@ -5,6 +5,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.ordeagro.invoice.events.*;
 import co.com.sofka.ordeagro.invoice.values.*;
+import co.com.sofka.ordeagro.shared.*;
 
 import java.util.List;
 

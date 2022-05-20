@@ -2,7 +2,7 @@ package co.com.sofka.ordeagro.invoice.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.ordeagro.invoice.values.CustomerId;
-import co.com.sofka.ordeagro.invoice.values.Email;
+import co.com.sofka.ordeagro.shared.Email;
 
 public class CustomerEmailUpdated extends DomainEvent {
     private final CustomerId customerId;

@@ -1,22 +1,25 @@
-package co.com.sofka.ordeagro.invoice.values;
+package co.com.sofka.ordeagro.shared;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Name  implements ValueObject {
+public class Address implements ValueObject {
     private final String value;
 
-    public Name(String value) {
+    public Address(String value) {
         this.value = Objects.requireNonNull(value);
         if (this.value.isBlank()) {
-            throw new IllegalArgumentException("Person name can't be blank");
+            throw new IllegalArgumentException("Address can't be blank");
         }
 
         if (this.value.length() < 4) {
-            throw new IllegalArgumentException("Full name (Name+LastName) must be longer than five characters");
+            throw new IllegalArgumentException("Address must be longer than five characters");
         }
 
+        if (this.value.length() > 100) {
+            throw new IllegalArgumentException("Address must be smaller than one hundred characters");
+        }
     }
 
     @Override
@@ -28,8 +31,8 @@ public class Name  implements ValueObject {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Name name = (Name) o;
-        return value.equals(name.value);
+        Address address = (Address) o;
+        return value.equals(address.value);
     }
 
     @Override

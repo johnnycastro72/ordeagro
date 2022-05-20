@@ -2,7 +2,7 @@ package co.com.sofka.ordeagro.invoice.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.ordeagro.invoice.values.CustomerId;
-import co.com.sofka.ordeagro.invoice.values.Email;
+import co.com.sofka.ordeagro.shared.Email;
 
 public class UpdateCustomerEmail extends Command {
     private final CustomerId customerId;

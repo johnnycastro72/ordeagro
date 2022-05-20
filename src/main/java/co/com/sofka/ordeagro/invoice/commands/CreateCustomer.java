@@ -2,6 +2,10 @@ package co.com.sofka.ordeagro.invoice.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.ordeagro.invoice.values.*;
+import co.com.sofka.ordeagro.shared.Address;
+import co.com.sofka.ordeagro.shared.Email;
+import co.com.sofka.ordeagro.shared.Name;
+import co.com.sofka.ordeagro.shared.Phone;
 
 public class CreateCustomer extends Command {
     private final CustomerId customerId;

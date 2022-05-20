@@ -2,6 +2,7 @@ package co.com.sofka.ordeagro.invoice.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.ordeagro.invoice.values.*;
+import co.com.sofka.ordeagro.shared.VendorId;
 
 public class RegisterInvoice extends Command {
     private final InvoiceId invoiceId;

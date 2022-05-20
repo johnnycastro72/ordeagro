@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.ordeagro.invoice.values.CustomerId;
 import co.com.sofka.ordeagro.invoice.values.InvoiceDate;
 import co.com.sofka.ordeagro.invoice.values.InvoiceTotal;
-import co.com.sofka.ordeagro.invoice.values.VendorId;
+import co.com.sofka.ordeagro.shared.VendorId;
 
 public class InvoiceRegistered extends DomainEvent {
 

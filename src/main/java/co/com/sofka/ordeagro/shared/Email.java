@@ -1,24 +1,24 @@
-package co.com.sofka.ordeagro.invoice.values;
+package co.com.sofka.ordeagro.shared;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Address implements ValueObject {
+public class Email  implements ValueObject {
     private final String value;
 
-    public Address(String value) {
+    public Email(String value) {
         this.value = Objects.requireNonNull(value);
         if (this.value.isBlank()) {
-            throw new IllegalArgumentException("Address can't be blank");
+            throw new IllegalArgumentException("Email can't be blank");
         }
 
         if (this.value.length() < 4) {
-            throw new IllegalArgumentException("Address must be longer than five characters");
+            throw new IllegalArgumentException("Email must be longer than five characters");
         }
 
-        if (this.value.length() > 100) {
-            throw new IllegalArgumentException("Address must be smaller than one hundred characters");
+        if (!value.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")) {
+            throw new IllegalArgumentException("Email is not valid");
         }
     }
 
@@ -31,8 +31,8 @@ public class Address implements ValueObject {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Address address = (Address) o;
-        return value.equals(address.value);
+        Email email = (Email) o;
+        return value.equals(email.value);
     }
 
     @Override
