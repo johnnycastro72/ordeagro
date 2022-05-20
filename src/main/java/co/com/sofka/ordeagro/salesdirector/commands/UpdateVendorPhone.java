@@ -1,4 +1,4 @@
-package co.com.sofka.ordeagro.salesdirector.events.commands;
+package co.com.sofka.ordeagro.salesdirector.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.ordeagro.shared.Phone;

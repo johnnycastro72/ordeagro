@@ -2,7 +2,6 @@ package co.com.sofka.ordeagro.invoice;
 
 import co.com.sofka.domain.generic.EventChange;
 import co.com.sofka.ordeagro.invoice.events.*;
-import co.com.sofka.ordeagro.invoice.values.CustomerId;
 
 public class InvoiceChange extends EventChange {
     public InvoiceChange(Invoice invoice) {
@@ -43,7 +42,7 @@ public class InvoiceChange extends EventChange {
             detailProduct.UpdateQuantity(event.quantity());
         });
 
-        apply((ProductAdded event) -> {
+        apply((DetailProductAdded event) -> {
             new DetailProduct(event.invoiceId(), event.productId(), event.quantity(), event.price());
         });
     }

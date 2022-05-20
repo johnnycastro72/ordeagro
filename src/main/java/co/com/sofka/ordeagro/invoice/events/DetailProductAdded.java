@@ -6,13 +6,13 @@ import co.com.sofka.ordeagro.shared.Price;
 import co.com.sofka.ordeagro.invoice.values.ProductId;
 import co.com.sofka.ordeagro.invoice.values.Quantity;
 
-public class ProductAdded extends DomainEvent {
+public class DetailProductAdded extends DomainEvent {
     private final InvoiceId invoiceId;
     private final ProductId productId;
     private final Quantity quantity;
     private final Price price;
 
-    public ProductAdded(InvoiceId invoiceId, ProductId productId, Quantity quantity, Price price) {
+    public DetailProductAdded(InvoiceId invoiceId, ProductId productId, Quantity quantity, Price price) {
         super("ordeagro.sofka.productadded");
         this.invoiceId = invoiceId;
         this.productId = productId;

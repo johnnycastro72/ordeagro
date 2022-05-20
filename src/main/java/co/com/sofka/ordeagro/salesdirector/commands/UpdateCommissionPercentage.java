@@ -1,4 +1,4 @@
-package co.com.sofka.ordeagro.salesdirector.events.commands;
+package co.com.sofka.ordeagro.salesdirector.commands;
 
 import co.com.sofka.ordeagro.salesdirector.values.CommissionId;
 import co.com.sofka.ordeagro.salesdirector.values.Percentage;

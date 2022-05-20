@@ -49,7 +49,7 @@ public class Invoice extends AggregateEvent<InvoiceId> {
     }
 
     public void AddProduct(InvoiceId invoiceId, ProductId productId, Quantity quantity, Price price) {
-        appendChange(new ProductAdded(invoiceId, productId, quantity, price)).apply();
+        appendChange(new DetailProductAdded(invoiceId, productId, quantity, price)).apply();
     }
 
     public void UpdateDetailProductQuantity(InvoiceId invoiceId, ProductId productId, Quantity quantity) {

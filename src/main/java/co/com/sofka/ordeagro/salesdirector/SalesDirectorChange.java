@@ -1,7 +1,6 @@
 package co.com.sofka.ordeagro.salesdirector;
 
 import co.com.sofka.domain.generic.EventChange;
-import co.com.sofka.ordeagro.invoice.salesdirector.events.*;
 import co.com.sofka.ordeagro.salesdirector.events.*;
 
 import java.util.HashSet;
