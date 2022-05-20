@@ -15,5 +15,4 @@ public class VendorId extends Identity {
         return new VendorId(id);
     }
 
-
 }
